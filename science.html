@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('science.png'); /* Add your image */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(40, 167, 69, 0.9); /* Semi-transparent green */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #fff;
+            color: #28a745;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        /* Central Content */
+        .content {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .content h1 {
+            font-size: 64px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 22px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+            margin-bottom: 30px;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            margin-top: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 350px;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar button {
+            padding: 15px 25px;
+            margin-left: 10px;
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .search-bar button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .content h1 {
+                font-size: 48px;
+            }
+
+            .content p {
+                font-size: 18px;
+            }
+
+            .search-bar input[type="text"] {
+                width: 250px;
+            }
+
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../home.html">Go to Home</a>
+        <a href="physics.html">Physics</a>
+        <a href="chemistry.html">Chemistry</a>
+        <a href="biology.html">Biology</a>
+    </div>
+
+    <!-- Central Content -->
+    <div class="content">
+        <h1>Science</h1>
+        <p>Unlock the mysteries of Physics, Chemistry, and Biology!</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search topics...">
+            <button>Search</button>
+        </div>
+    </div>
+</body>
+</html>

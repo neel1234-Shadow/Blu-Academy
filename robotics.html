@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: url('robo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        /* Navigation Bar */
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #45a049;
+            border-radius: 5px;
+        }
+        /* Center Content */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: calc(100% - 50px); /* Adjusting for navbar */
+        }
+        .center-content h1 {
+            font-size: 50px;
+            margin: 0;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .center-content p {
+            font-size: 18px;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 3px #000;
+            margin: 10px 0 20px;
+        }
+        .search-bar {
+            display: flex;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #4CAF50;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../home.html">Go to Home</a>
+        <a href="chapter1.html">Introduction to Robotics</a>
+        <a href="chapter2.html">History of Robotics</a>
+        <a href="chapter3.html">Types of Robots</a>
+        <a href="chapter4.html">Applications of Robotics</a>
+        <a href="chapter5.html">Future of Robotics</a>
+    </div>
+
+    <!-- Center Content -->
+    <div class="center-content">
+        <h1>Robotics</h1>
+        <p>Explore the fascinating world of robotics with us!</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+</body>
+</html>

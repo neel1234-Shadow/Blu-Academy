@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #4267B2; /* Blue */
+    --secondary-color: #F7F9FC; /* Light background */
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+/* Main Section */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.about, .features, .contact {
+    margin: 2em 0;
+    background-color: var(--white);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h2, .features h2, .contact h2 {
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+    font-size: 1.1rem;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    padding: 0.7em;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: darkblue;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}

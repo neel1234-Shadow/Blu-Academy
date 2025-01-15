@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #ffffff; /* White Background */
+    --secondary-color: #333333; /* Dark Text */
+    --accent-color: #d35400; /* Vibrant Orange for Highlights */
+    --hover-color: #b03a2e; /* Darker Orange for Hover Effects */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+
+.section {
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: var(--accent-color);
+}
+
+.section ul {
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1em 0;
+    margin-top: 2em;
+}

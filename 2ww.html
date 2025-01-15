@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive website about the history of World War Two, including its causes, major events, impact, and aftermath.">
+    <title>History of World War Two</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #1e2a38;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2c3e50;
+            padding: 10px 0;
+        }
+        nav button {
+            background-color: #fff;
+            color: #2c3e50;
+            border: 2px solid #2c3e50;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: #2c3e50;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+        }
+        section h2 {
+            color: #2c3e50;
+        }
+        section p {
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>History of World War Two</h1>
+        <nav>
+            <button onclick="scrollToSection('overview')">Overview</button>
+            <button onclick="scrollToSection('causes')">Causes</button>
+            <button onclick="scrollToSection('key-events')">Key Events</button>
+            <button onclick="scrollToSection('impact')">Impact</button>
+            <button onclick="scrollToSection('aftermath')">Aftermath</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>
+                World War Two, also known as the Second World War, was a global conflict that lasted from 1939 to 1945. 
+                It involved the majority of the world's nations, forming two opposing military alliances: the Allies and the Axis. 
+                It is widely regarded as the deadliest conflict in human history, resulting in an estimated 70-85 million fatalities, 
+                including civilians and military personnel.
+            </p>
+            <p>
+                The war reshaped the political, economic, and social landscape of the 20th century, leading to the rise of 
+                the United States and the Soviet Union as superpowers and the establishment of the United Nations.
+            </p>
+        </section>
+
+        <!-- Causes of World War Two Section -->
+        <section id="causes">
+            <h2>Causes of World War Two</h2>
+            <p>
+                The causes of World War Two were rooted in unresolved issues from World War One and the Treaty of Versailles. 
+                Germany's harsh reparations, territorial losses, and economic instability fueled resentment and the rise of Adolf Hitler. 
+                Japan's expansionist ambitions in Asia, Italy's desire for imperial power, and the failure of the League of Nations 
+                to prevent aggression also contributed to the outbreak of the war.
+            </p>
+            <p>
+                Other factors include the global Great Depression, which created widespread unemployment and social unrest, 
+                and the policy of appeasement pursued by Britain and France, which emboldened aggressive actions by Germany and Japan.
+            </p>
+        </section>
+
+        <!-- Key Events Section -->
+        <section id="key-events">
+            <h2>Key Events of World War Two</h2>
+            <p>
+                - **1939**: Germany invades Poland, leading Britain and France to declare war.  
+                - **1940**: Germany conquers much of Europe; Battle of Britain begins.  
+                - **1941**: Germany invades the Soviet Union; Japan attacks Pearl Harbor, bringing the United States into the war.  
+                - **1942-1943**: The tide turns with the Allied victories in North Africa, Stalingrad, and the Pacific.  
+                - **1944**: D-Day invasion of Normandy; Allies liberate France.  
+                - **1945**: Germany surrenders in May; atomic bombs dropped on Hiroshima and Nagasaki lead to Japan's surrender in August.
+            </p>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact">
+            <h2>Impact of World War Two</h2>
+            <p>
+                The war resulted in significant political, economic, and social changes worldwide. The destruction of infrastructure, 
+                cities, and industries across Europe and Asia left a lasting impact. The Holocaust, which claimed the lives of six 
+                million Jews, highlighted the horrors of genocide and led to international efforts to prevent such atrocities in the future.
+            </p>
+            <p>
+                The war also accelerated advancements in technology and warfare, including the development of nuclear weapons. 
+                It marked the beginning of the Cold War as ideological differences between the United States and the Soviet Union 
+                shaped the post-war world.
+            </p>
+        </section>
+
+        <!-- Aftermath Section -->
+        <section id="aftermath">
+            <h2>Aftermath of World War Two</h2>
+            <p>
+                The aftermath of World War Two saw the establishment of the United Nations in 1945 to promote international 
+                cooperation and prevent future conflicts. The Marshall Plan provided economic aid to rebuild war-torn Europe. 
+                Germany was divided into East and West, while the Iron Curtain symbolized the growing divide between the 
+                Soviet-controlled East and the democratic West.
+            </p>
+            <p>
+                Decolonization gained momentum, as former colonies in Asia, Africa, and the Middle East sought independence. 
+                The war also led to advancements in civil rights movements and the recognition of the need for global cooperation 
+                to address challenges such as poverty and conflict.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Gain Knowledge.</p>
+    </footer>
+</body>
+</html>

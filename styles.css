@@ -1,0 +1,109 @@
+/* Reset body and html margins and height */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Background container */
+.background-container {
+    background: url('./home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+/* Top header and navigation */
+.top-header {
+    width: 100%;
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-nav a:hover {
+    background-color: #45a049;
+}
+
+/* Content section: Name, Description, and Search Bar */
+.content-container {
+    text-align: center;
+    color: white;
+    margin-top: 150px; /* Space from top for header */
+    position: absolute;
+    top: 3%;
+}
+
+/* Website Name */
+.website-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Website Description */
+.website-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Search bar container */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#search-bar {
+    padding: 12px;
+    width: 70%;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

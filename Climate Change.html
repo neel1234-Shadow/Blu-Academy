@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Awareness</title>
+	 <link rel="climate.js" href="climate.css">
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background: #2e8b57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Auth buttons */
+        .auth-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .auth-buttons button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #228B22;
+        }
+
+        /* Section styling */
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #2e8b57;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Modal form styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover, .close:focus {
+            color: black;
+            cursor: pointer;
+        }
+
+        /* Footer styling */
+        footer {
+            background: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Rating section */
+        .rating {
+            font-size: 25px;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Climate Change: A Global Challenge</h1>
+        <nav>
+            <ul>
+				<li><a href="information.html">Back</a></li>
+                <li><a href="#climate-change-info">Overview</a></li>
+                <li><a href="#causes">Causes</a></li>
+                <li><a href="#effects">Effects</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#take-action">Take Action</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="document.getElementById('sign-in').style.display='flex'">Sign In</button>
+            <button onclick="document.getElementById('sign-up').style.display='flex'">Sign Up</button>
+        </div>
+    </header>
+
+    <section id="climate-change-info">
+        <h2>What is Climate Change?</h2>
+        <p>Climate change refers to significant and lasting changes in the Earth's climate, particularly a rise in temperature. It encompasses shifts in temperature, precipitation, wind patterns, and other elements of the Earth's climate system. The overwhelming consensus among climate scientists is that climate change is primarily caused by human activities, particularly the burning of fossil fuels, deforestation, and industrial processes that increase the concentration of greenhouse gases (GHGs) in the atmosphere.</p>
+    </section>
+
+    <section id="causes">
+        <h2>Causes of Climate Change:</h2>
+        <p>The primary causes of climate change can be categorized into several key factors:</p>
+        <ul>
+            <li><strong>Burning Fossil Fuels:</strong> The combustion of coal, oil, and natural gas for energy is the largest single source of global greenhouse gas emissions. This occurs in various sectors, including electricity generation, transportation, and industry.</li>
+            <li><strong>Deforestation:</strong> Trees absorb carbon dioxide (CO2), a significant greenhouse gas. When forests are cut down for agriculture or urban development, the stored carbon is released back into the atmosphere, contributing to climate change.</li>
+            <li><strong>Agricultural Practices:</strong> Agriculture contributes to climate change through methane emissions from livestock and rice production, as well as nitrous oxide emissions from fertilized soils. These gases have a much stronger heat-trapping effect than CO2.</li>
+            <li><strong>Industrial Processes:</strong> Certain industrial activities release greenhouse gases directly into the atmosphere. For example, cement production generates significant CO2 emissions.</li>
+            <li><strong>Waste Management:</strong> Landfills produce methane as organic waste decomposes. Poor waste management practices exacerbate emissions, contributing to climate change.</li>
+        </ul>
+    </section>
+
+    <section id="effects">
+        <h2>Effects of Climate Change:</h2>
+        <p>The impacts of climate change are widespread and include:</p>
+        <ul>
+            <li><strong>Rising Global Temperatures:</strong> The Earth's average surface temperature has increased significantly since the late 19th century, primarily due to increased concentrations of greenhouse gases. This rise in temperature contributes to various changes in weather patterns.</li>
+            <li><strong>Melting Ice Caps and Rising Sea Levels:</strong> The polar ice caps and glaciers are melting, contributing to rising sea levels, which threaten coastal communities and ecosystems. This poses risks to freshwater resources and increases flooding in low-lying areas.</li>
+            <li><strong>Extreme Weather Events:</strong> Climate change is linked to an increase in the frequency and severity of extreme weather events, including hurricanes, droughts, heatwaves, and heavy precipitation. These events can have devastating impacts on communities and economies.</li>
+            <li><strong>Threats to Biodiversity:</strong> Many species face extinction as their habitats change or disappear due to shifting climate conditions. Ecosystems are disrupted, leading to a loss of biodiversity, which is critical for ecological balance and human well-being.</li>
+            <li><strong>Impact on Agriculture:</strong> Changes in climate affect agricultural productivity. Increased temperatures and changing precipitation patterns can lead to decreased crop yields, threatening food security.</li>
+            <li><strong>Health Risks:</strong> Climate change poses direct and indirect health risks, including heat-related illnesses, respiratory issues from increased air pollution, and the spread of infectious diseases as the habitats of vectors (like mosquitoes) change.</li>
+        </ul>
+    </section>
+
+    <section id="solutions">
+        <h2>Solutions to Combat Climate Change:</h2>
+        <p>While climate change presents a significant challenge, there are many solutions that can help mitigate its effects:</p>
+        <ul>
+            <li><strong>Transition to Renewable Energy:</strong> Shifting from fossil fuels to renewable energy sources like solar, wind, and hydropower can significantly reduce greenhouse gas emissions and dependence on non-renewable resources.</li>
+            <li><strong>Enhancing Energy Efficiency:</strong> Improving energy efficiency in buildings, transportation, and industries can help lower energy consumption and emissions. Simple actions like better insulation and using energy-efficient appliances can make a difference.</li>
+            <li><strong>Protecting and Restoring Forests:</strong> Protecting existing forests and restoring degraded ones can help absorb CO2 from the atmosphere. Reforestation and afforestation initiatives play a critical role in climate mitigation.</li>
+            <li><strong>Adopting Sustainable Agricultural Practices:</strong> Implementing sustainable farming techniques can reduce emissions from agriculture. This includes crop rotation, agroforestry, and better manure management to limit methane and nitrous oxide emissions.</li>
+            <li><strong>Promoting Sustainable Transportation:</strong> Investing in public transportation, promoting electric vehicles, and encouraging walking and cycling can help reduce emissions from the transportation sector.</li>
+            <li><strong>Advocating for Policy Changes:</strong> Strong climate policies at local, national, and international levels are essential for implementing effective solutions. Advocacy for policies that promote clean energy, emissions reduction, and sustainable practices can drive systemic change.</li>
+        </ul>
+    </section>
+
+    <section id="take-action">
+        <h2>Why Taking Action is Important:</h2>
+        <p>Taking action against climate change is essential to prevent catastrophic impacts on our planet. By working together, we can reduce emissions, protect our environment, and ensure a sustainable future for generations to come. Individual actions, combined with policy changes and collective efforts, can lead to significant improvements in combating climate change.</p>
+    </section>
+	
+	
+    <section id="carbon-calculator">
+        <h2>Carbon Footprint Calculator</h2>
+        <p>Calculate your annual carbon emissions based on your energy consumption.</p>
+        <form id="calculator-form">
+            <label for="electricity">Electricity Usage (kWh per month):</label>
+            <input type="number" id="electricity" name="electricity" required>
+
+            <label for="gas">Natural Gas Usage (therms per month):</label>
+            <input type="number" id="gas" name="gas" required>
+
+            <label for="car_mileage">Vehicle Mileage (miles driven per week):</label>
+            <input type="number" id="car_mileage" name="car_mileage" required>
+
+            <label for="flights">Number of Flights per Year:</label>
+            <input type="number" id="flights" name="flights" required>
+
+            <button type="button" onclick="calculateCarbonFootprint()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+   
+    <script src="script.js"></script>
+ 
+
+    <!-- Sign In Modal -->
+    <div id="sign-in" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('sign-in').style.display='none'">&times;</span>
+            <h2>Sign In</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="sign-up" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('sign-up').style.display='none'">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="rate-us">
+        <h2>Rate Us</h2>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <p>Leave your feedback below:</p>
+        <textarea rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br><br>
+        <button>Submit Feedback</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Climate Change Awareness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('sign-in')) {
+                document.getElementById('sign-in').style.display = "none";
+            }
+            if (event.target == document.getElementById('sign-up')) {
+                document.getElementById('sign-up').style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

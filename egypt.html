@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive website about the rich history and culture of Egypt.">
+    <title>Egyptian History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3a9a5d;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav button {
+            background-color: #fff;
+            color: #3a9a5d;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: #2d7a48;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+        }
+        section h2 {
+            color: #3a9a5d;
+        }
+        footer {
+            background-color: #3a9a5d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Egyptian History</h1>
+        <nav>
+            <button onclick="scrollToSection('ancient-egypt')">Ancient Egypt</button>
+            <button onclick="scrollToSection('middle-kingdom')">Middle Kingdom</button>
+            <button onclick="scrollToSection('new-kingdom')">New Kingdom</button>
+            <button onclick="scrollToSection('modern-egypt')">Modern Egypt</button>
+        </nav>
+    </header>
+    <main>
+        <section id="ancient-egypt">
+            <h2>Ancient Egypt</h2>
+            <p>
+                Ancient Egypt is often regarded as one of the most remarkable civilizations in history. Spanning over three millennia,
+                it was characterized by incredible advancements in art, architecture, science, and governance. The foundation of Ancient Egypt
+                lay along the Nile River, which provided fertile land for agriculture and played a central role in the development of the
+                civilization. Early Egyptians revered their gods and believed in an afterlife, which significantly influenced their culture
+                and practices.
+            </p>
+            <p>
+                The Old Kingdom (c. 2686–2181 BCE) is widely known as the "Age of the Pyramids." During this time, monumental structures
+                like the Great Pyramid of Giza and the Sphinx were constructed. The Pharaohs were considered divine rulers who maintained
+                both spiritual and political authority over the land. However, towards the end of the Old Kingdom, internal strife and
+                weak leadership led to its decline.
+            </p>
+            <!-- Expand with more details -->
+        </section>
+        <section id="middle-kingdom">
+            <h2>Middle Kingdom</h2>
+            <p>
+                The Middle Kingdom (c. 2050–1710 BCE) marked a period of political stability and cultural flourishing in Egypt. It was
+                during this time that literature, art, and architecture saw significant advancements. Thebes emerged as a major city,
+                and the Pharaohs worked to unify the country under a centralized government.
+            </p>
+            <p>
+                Significant achievements of this era include irrigation projects to control the Nile's flooding, ensuring agricultural
+                prosperity. Despite these advancements, the Middle Kingdom eventually fell due to invasions by the Hyksos, a foreign
+                people who introduced new technologies, such as chariots and bronze weaponry.
+            </p>
+            <!-- Expand with more details -->
+        </section>
+        <section id="new-kingdom">
+            <h2>New Kingdom</h2>
+            <p>
+                The New Kingdom (c. 1550–1070 BCE) is often referred to as the "Golden Age" of Ancient Egypt. It was a time of great
+                wealth, territorial expansion, and monumental building projects. Pharaohs like Hatshepsut, Akhenaten, Tutankhamun, and
+                Ramses II left a lasting legacy on Egypt's history.
+            </p>
+            <p>
+                Hatshepsut, one of the few female Pharaohs, is celebrated for her peaceful reign and trade expeditions. Ramses II,
+                often called Ramses the Great, is renowned for his military campaigns and extensive construction projects, including
+                the temples at Abu Simbel. However, internal strife and invasions by the Sea Peoples led to the decline of the New
+                Kingdom.
+            </p>
+            <!-- Expand with more details -->
+        </section>
+        <section id="modern-egypt">
+            <h2>Modern Egypt</h2>
+            <p>
+                Modern Egypt is a continuation of its ancient legacy while embracing contemporary advancements. Following its independence
+                in the 20th century, Egypt became a hub for culture, tourism, and economic development. The iconic Nile River remains
+                central to Egypt's identity, and its monuments attract millions of visitors each year.
+            </p>
+            <p>
+                Today, Egypt balances its historical heritage with the challenges of modernity. It remains a vital player in regional
+                politics and international relations, continuing to inspire the world with its rich history and culture.
+            </p>
+            <!-- Expand with more details -->
+        </section>
+    </main>
+    <footer>
+        <p>Gain Knowledge.</p>
+    </footer>
+</body>
+</html>
